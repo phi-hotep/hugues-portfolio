@@ -1,0 +1,23 @@
+[
+  {
+    "name": "IT Automation & AI Agents",
+    "slug": "automation-ai",
+    "icon": "Brain",
+    "color": "teal",
+    "description": "Building intelligent systems that reason and act — from ReAct-loop agents to NOC automation. Turning operational complexity into programmable workflows."
+  },
+  {
+    "name": "Mobile & Web Development",
+    "slug": "flutter",
+    "icon": "Smartphone",
+    "color": "blue",
+    "description": "Cross-platform apps with Flutter that run natively on iOS, Android, and Web. Clean architecture, Firebase backend, and production-ready from day one."
+  },
+  {
+    "name": "Workflow Automation (n8n)",
+    "slug": "n8n",
+    "icon": "GitBranch",
+    "color": "amber",
+    "description": "Designing and deploying n8n automation pipelines on self-hosted infrastructure. Connecting APIs, automating repetitive tasks, and reclaiming human time."
+  }
+]
