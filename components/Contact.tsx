@@ -16,7 +16,7 @@ export default function Contact() {
         </h2>
 
         <p style={{ fontFamily: "var(--font-mono)", fontSize: 14, color: "var(--color-muted)", lineHeight: 1.8, marginBottom: "3rem", maxWidth: 480, margin: "0 auto 3rem" }}>
-          Open to IT roles, automation consulting, and Flutter projects. Bilingual (FR/EN), based in Toronto, available immediately.
+          Open to IT roles, automation consulting, web and mobile projects. Bilingual (FR/EN), based in Ottawa (Canada), available immediately.
         </p>
 
         {/* Email CTA */}
