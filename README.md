@@ -46,7 +46,7 @@ Edit `data/projects.json` and add a new object:
   "tags": ["Python", "API"],
   "type": "code",
   "outcome": "One-line impact statement",
-  "thumbnail": "/images/my-project.png",
+  "thumbnail": "/images/projects/my-project.png",
   "repo": "https://github.com/...",
   "featured": false
 }
