@@ -26,7 +26,6 @@ export default function About() {
             {[
               ["Languages", "French (native) · English (professional)"],
               ["Location", profile.location],
-              ["Currently", "NPower Canada Junior IT Analyst Program"],
             ].map(([key, val]) => (
               <div key={key} style={{ display: "flex", gap: "1rem", fontFamily: "var(--font-mono)", fontSize: 13 }}>
                 <span style={{ color: "var(--color-teal)", minWidth: 90 }}>{key}</span>
@@ -37,19 +36,20 @@ export default function About() {
         </div>
 
         {/* Right — photo placeholder */}
-        <div style={{ position: "relative" }}>
-          <div style={{
-            width: "100%", aspectRatio: "4/5", borderRadius: 8,
-            background: "var(--color-surface-2)", border: "1px solid var(--color-border)",
-            display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
-            gap: "0.75rem", color: "var(--color-muted)",
-          }}>
-            <div style={{ fontSize: 48 }}>👤</div>
-            <span style={{ fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.1em" }}>PHOTO COMING SOON</span>
-          </div>
-          {/* Decorative corner */}
-          <div style={{ position: "absolute", bottom: -16, right: -16, width: 80, height: 80, border: "2px solid var(--color-teal)", borderRadius: 4, opacity: 0.3 }} />
-          <div style={{ position: "absolute", top: -16, left: -16, width: 48, height: 48, background: "var(--color-teal)", borderRadius: 4, opacity: 0.08 }} />
+        <div style={{ width: "100%", aspectRatio: "4/5", borderRadius: 8, overflow: "hidden", border: "1px solid var(--color-border)", background: "var(--color-surface-2)", position: "relative" }}>
+          <img
+            src={profile.photo}
+            alt={profile.name}
+            style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block" }}
+            onError={e => {
+              const target = e.currentTarget;
+              target.style.display = "none";
+              const parent = target.parentElement;
+              if (parent) {
+                parent.innerHTML = '<div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.75rem;color:var(--color-muted)"><div style="font-size:48px">👤</div><span style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em">PHOTO COMING SOON</span></div>';
+              }
+            }}
+          />
         </div>
       </div>
 
