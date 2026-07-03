@@ -31,7 +31,7 @@ export default function Hero() {
         {/* Mono label */}
         <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: "2rem" }}>
           <div style={{ width: 32, height: 1, background: "var(--color-teal)" }} />
-          <span className="section-label">Available for hire · Toronto, Canada</span>
+          <span className="section-label">Available for hire · Ottawa, Canada</span>
         </div>
 
         {/* Name */}
@@ -49,7 +49,7 @@ export default function Hero() {
             opacity: visible ? 1 : 0,
             transform: visible ? "translateY(0)" : "translateY(-10px)",
           }}>
-            <span style={{ color: "var(--color-teal)" }}>// </span>{roles[roleIndex]}
+            <span style={{ color: "var(--color-teal)" }}>&gt; </span>{roles[roleIndex]}
           </p>
         </div>
 
