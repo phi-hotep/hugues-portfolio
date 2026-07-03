@@ -1,7 +1,7 @@
 "use client";
-import { useState } from "react";
-import projectsData from "@/data/projects.json";
 import domainsData from "@/data/domains.json";
+import projectsData from "@/data/projects.json";
+import { useState } from "react";
 
 const colorMap: Record<string, string> = {
   "automation-ai": "var(--color-teal)",
@@ -19,7 +19,6 @@ export default function Projects() {
   const [active, setActive] = useState("all");
 
   const filtered = active === "all" ? projectsData : projectsData.filter(p => p.domain === active);
-  const accent = active === "all" ? "var(--color-teal)" : colorMap[active] || "var(--color-teal)";
 
   return (
     <section id="projects" style={{ padding: "8rem 2rem", maxWidth: 1100, margin: "0 auto" }}>
@@ -75,8 +74,12 @@ export default function Projects() {
               }}
             >
               {/* Thumbnail */}
-              <div style={{ height: 180, background: "var(--color-surface-2)", borderBottom: "1px solid var(--color-border)", display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
-                <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--color-muted)", letterSpacing: "0.1em" }}>[ THUMBNAIL ]</div>
+              <div style={{ height: 180, background: "var(--color-surface-2)", borderBottom: "1px solid var(--color-border)", display: "flex", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden" }}>
+                {project.thumbnail ? (
+                  <img src={project.thumbnail} alt={project.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                ) : (
+                  <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--color-muted)", letterSpacing: "0.1em" }}>[ THUMBNAIL ]</div>
+                )}
                 {project.featured && (
                   <div style={{ position: "absolute", top: 12, right: 12, fontFamily: "var(--font-mono)", fontSize: 10, padding: "3px 8px", borderRadius: 3, background: `${accent}22`, color: accent, border: `1px solid ${accent}44`, letterSpacing: "0.08em" }}>FEATURED</div>
                 )}
