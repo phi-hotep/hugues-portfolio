@@ -27,7 +27,7 @@ export default function Domains() {
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1.5rem" }}>
-          {domains.map((domain, i) => {
+          {domains.filter(domain => domain.featured).map((domain, i) => {
             const colors = colorMap[domain.color] || colorMap.teal;
             return (
               <div key={domain.slug}
