@@ -7,6 +7,7 @@ const colorMap: Record<string, string> = {
   "automation-ai": "var(--color-teal)",
   "flutter": "var(--color-blue)",
   "n8n": "var(--color-amber)",
+  "mobile-apps": "var(--color-blue)",
 };
 
 const typeLabel: Record<string, string> = {
@@ -14,6 +15,55 @@ const typeLabel: Record<string, string> = {
   "workflow": "Workflow",
   "case-study": "Case Study",
 };
+
+function isValidLink(value?: string | null): value is string {
+  return typeof value === "string" && value.trim().length > 0;
+}
+
+function ProjectLinkSlot({
+  href,
+  label,
+  color,
+  external = false,
+}: {
+  href?: string | null;
+  label: string;
+  color: string;
+  external?: boolean;
+}) {
+  if (!isValidLink(href)) {
+    return (
+      <span
+        aria-disabled="true"
+        style={{
+          fontFamily: "var(--font-mono)",
+          fontSize: 12,
+          letterSpacing: "0.04em",
+          color: "var(--color-muted)",
+          padding: "2px 8px",
+          borderRadius: 4,
+          border: "1px dashed var(--color-border)",
+          background: "rgba(255,255,255,0.03)",
+          cursor: "not-allowed",
+          userSelect: "none",
+        }}
+      >
+        {label} — Coming soon
+      </span>
+    );
+  }
+
+  return (
+    <a
+      href={href}
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener noreferrer" : undefined}
+      style={{ fontFamily: "var(--font-mono)", fontSize: 12, color, textDecoration: "none", letterSpacing: "0.04em" }}
+    >
+      {label} →
+    </a>
+  );
+}
 
 export default function Projects() {
   const [active, setActive] = useState("all");
@@ -113,16 +163,10 @@ export default function Projects() {
                 </div>
 
                 {/* Links */}
-                <div style={{ display: "flex", gap: "0.75rem", paddingTop: "0.5rem", borderTop: "1px solid var(--color-border)" }}>
-                  {project.repo && (
-                    <a href={project.repo} target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: accent, textDecoration: "none", letterSpacing: "0.04em" }}>GitHub →</a>
-                  )}
-                  {project.demo && (
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: "var(--color-muted)", textDecoration: "none", letterSpacing: "0.04em" }}>Live Demo →</a>
-                  )}
-                  {project.caseStudy && (
-                    <a href={project.caseStudy} style={{ fontFamily: "var(--font-mono)", fontSize: 12, color: accent, textDecoration: "none", letterSpacing: "0.04em" }}>Case Study →</a>
-                  )}
+                <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap", paddingTop: "0.5rem", borderTop: "1px solid var(--color-border)" }}>
+                  <ProjectLinkSlot href={project.repo} label="GitHub" color={accent} external />
+                  <ProjectLinkSlot href={project.demo} label="Live Demo" color="var(--color-muted)" external />
+                  <ProjectLinkSlot href={project.caseStudy} label="Case Study" color={accent} />
                 </div>
               </div>
             </div>
