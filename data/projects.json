@@ -1,13 +1,37 @@
 [
   {
+    "id": "zerotouch",
+    "title": "ZeroTouch — Identity Lifecycle Engine",
+    "description": "Built and deployed a full Joiner/Mover/Leaver identity automation system: a Flutter web intake form triggers an Azure Function written in PowerShell 7, which drives Microsoft Graph to create, modify, and offboard users in a live Entra ID tenant, with branded SendGrid email and department-based group access.",
+    "domain": "identity-cloud",
+    "tags": [
+      "PowerShell",
+      "Azure Functions",
+      "Microsoft Graph",
+      "Entra ID",
+      "Flutter",
+      "M365 Automation"
+    ],
+    "type": "code",
+    "outcome": "Production-deployed JML engine running against a real Entra tenant, with a public Flutter web front end on Cloudflare Pages",
+    "thumbnail": "/images/projects/zerotouch.png",
+    "repo": "https://github.com/huguesbomokin/zerotouch",
+    "featured": true
+  },
+  {
     "id": "react-agent",
     "title": "ReAct AI Agent — Anthropic SDK",
     "description": "Built a minimal ReAct-loop AI agent in Python using the Anthropic SDK directly — no LangChain, no framework overhead. Agent reasons, acts, and observes across multi-step tasks.",
     "domain": "automation-ai",
-    "tags": ["Python", "Anthropic SDK", "AI Agents", "ReAct"],
+    "tags": [
+      "Python",
+      "Anthropic SDK",
+      "AI Agents",
+      "ReAct"
+    ],
     "type": "code",
     "outcome": "Functional multi-step AI agent with zero third-party framework dependency",
-    "thumbnail": "/images/react-agent.png",
+    "thumbnail": "/images/projects/react-agent.png",
     "repo": "https://github.com/huguesbomokin/react-agent",
     "featured": true
   },
@@ -16,10 +40,15 @@
     "title": "NOC Alert Triage Automation",
     "description": "Designed and operated automated alert triage workflows in a telecom NOC environment, reducing manual intervention on repetitive network events across 2G–4G infrastructure (Nokia, Huawei).",
     "domain": "automation-ai",
-    "tags": ["NOC Operations", "Network Automation", "Telecom", "4G/LTE"],
+    "tags": [
+      "NOC Operations",
+      "Network Automation",
+      "Telecom",
+      "4G/LTE"
+    ],
     "type": "case-study",
     "outcome": "Reduced manual NOC intervention on repetitive alerts across multi-vendor infrastructure",
-    "thumbnail": "/images/noc-triage.png",
+    "thumbnail": "/images/projects/noc-triage.png",
     "caseStudy": "/projects/noc-triage",
     "featured": false
   },
@@ -28,10 +57,16 @@
     "title": "PulseFlix — Streaming Discovery App",
     "description": "Cross-platform Flutter app (iOS, Android, Web) for discovering streaming content. Features Firebase backend, clean architecture, GDPR/PIPEDA analytics consent, and in-app review flows.",
     "domain": "flutter",
-    "tags": ["Flutter", "Dart", "Firebase", "Firestore", "GDPR"],
+    "tags": [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "Firestore",
+      "GDPR"
+    ],
     "type": "code",
     "outcome": "Production-ready cross-platform app with full compliance and analytics pipeline",
-    "thumbnail": "/images/pulseflix.png",
+    "thumbnail": "/images/projects/pulseflix.png",
     "repo": "https://github.com/huguesbomokin/pulseflix",
     "demo": "https://pulseflix.app",
     "featured": true
@@ -41,10 +76,15 @@
     "title": "Community Health Centre App",
     "description": "Volunteer Flutter development for a community health centre, contributing to a mobile solution aimed at improving service accessibility for underserved populations in Toronto.",
     "domain": "flutter",
-    "tags": ["Flutter", "Dart", "Volunteer", "Healthcare"],
+    "tags": [
+      "Flutter",
+      "Dart",
+      "Volunteer",
+      "Healthcare"
+    ],
     "type": "case-study",
     "outcome": "Improved digital service access for underserved community members in Toronto",
-    "thumbnail": "/images/health-centre.png",
+    "thumbnail": "/images/projects/health-centre.png",
     "caseStudy": "/projects/health-centre-app",
     "featured": false
   },
@@ -53,10 +93,15 @@
     "title": "Google Calendar Automation Workflow",
     "description": "Built an n8n workflow on a self-hosted VPS that automates Google Calendar event management via OAuth2, reducing manual scheduling overhead and syncing events across systems.",
     "domain": "n8n",
-    "tags": ["n8n", "Google Calendar API", "OAuth2", "Self-hosted"],
+    "tags": [
+      "n8n",
+      "Google Calendar API",
+      "OAuth2",
+      "Self-hosted"
+    ],
     "type": "workflow",
     "outcome": "Eliminated manual calendar management across connected systems",
-    "thumbnail": "/images/calendar-workflow.png",
+    "thumbnail": "/images/projects/calendar-workflow.png",
     "caseStudy": "/projects/calendar-automation",
     "featured": false
   },
@@ -65,10 +110,15 @@
     "title": "Email Triage Automation",
     "description": "Designed an n8n workflow that automatically classifies, labels, and routes incoming emails by priority and category — cutting manual inbox processing time significantly.",
     "domain": "n8n",
-    "tags": ["n8n", "Gmail API", "Automation", "Productivity"],
+    "tags": [
+      "n8n",
+      "Gmail API",
+      "Automation",
+      "Productivity"
+    ],
     "type": "workflow",
     "outcome": "Significantly reduced manual inbox processing time through intelligent routing",
-    "thumbnail": "/images/email-triage.png",
+    "thumbnail": "/images/projects/email-triage.png",
     "caseStudy": "/projects/email-triage",
     "featured": true
   }
