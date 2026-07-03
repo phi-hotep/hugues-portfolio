@@ -54,21 +54,25 @@
   },
   {
     "id": "pulseflix",
-    "title": "PulseFlix — Streaming Discovery App",
-    "description": "Cross-platform Flutter app (iOS, Android, Web) for discovering streaming content. Features Firebase backend, clean architecture, GDPR/PIPEDA analytics consent, and in-app review flows.",
-    "domain": "flutter",
+    "title": "PulseFlix — Movie & Trailer Discovery App",
+    "description": "Built a cross-platform movie and trailer discovery app in Flutter using Riverpod codegen and Clean Architecture, backed by Firebase (Auth, Firestore, Crashlytics) and the TMDB API. Features hybrid YouTube trailer playback (in-browser iframe on web, native app handoff on mobile) and a full GitHub Actions CI/CD pipeline.",
+    "domain": "mobile-apps",
     "tags": [
       "Flutter",
-      "Dart",
+      "Riverpod",
+      "Clean Architecture",
       "Firebase",
-      "Firestore",
-      "GDPR"
+      "GoRouter",
+      "Crashlytics",
+      "Anlytics",
+      "CI/CD",
+      "Cross-Platform",
+      "Google Play"
     ],
-    "type": "code",
-    "outcome": "Production-ready cross-platform app with full compliance and analytics pipeline",
+    "type": "app",
+    "outcome": "Reached closed testing on Google Play with a live web build deployed to Cloudflare Pages",
     "thumbnail": "/images/projects/pulseflix.png",
-    "repo": "https://github.com/huguesbomokin/pulseflix",
-    "demo": "https://pulseflix.app",
+    "demo": "https://phi-hotep.github.io/pulseflix-landing-page/",
     "featured": true
   },
   {
