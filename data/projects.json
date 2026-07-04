@@ -3,7 +3,7 @@
     "id": "zerotouch",
     "title": "ZeroTouch — Identity Lifecycle Engine",
     "description": "Built and deployed a full Joiner/Mover/Leaver identity automation system: a Flutter web intake form triggers an Azure Function written in PowerShell 7, which drives Microsoft Graph to create, modify, and offboard users in a live Entra ID tenant, with branded SendGrid email and department-based group access.",
-    "domain": "identity-cloud",
+    "domain": "automation-ai",
     "tags": [
       "PowerShell",
       "Azure Functions",
@@ -56,7 +56,7 @@
     "id": "pulseflix",
     "title": "PulseFlix — Movie & Trailer Discovery App",
     "description": "Built a cross-platform movie and trailer discovery app in Flutter using Riverpod codegen and Clean Architecture, backed by Firebase (Auth, Firestore, Crashlytics) and the TMDB API. Features hybrid YouTube trailer playback (in-browser iframe on web, native app handoff on mobile) and a full GitHub Actions CI/CD pipeline.",
-    "domain": "mobile-apps",
+    "domain": "flutter",
     "tags": [
       "Flutter",
       "Riverpod",

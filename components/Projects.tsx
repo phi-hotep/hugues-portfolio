@@ -7,7 +7,6 @@ const colorMap: Record<string, string> = {
   "automation-ai": "var(--color-teal)",
   "flutter": "var(--color-blue)",
   "n8n": "var(--color-amber)",
-  "mobile-apps": "var(--color-blue)",
 };
 
 const typeLabel: Record<string, string> = {
