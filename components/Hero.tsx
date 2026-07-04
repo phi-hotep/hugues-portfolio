@@ -55,7 +55,7 @@ export default function Hero() {
 
         {/* Bio */}
         <p style={{ fontSize: "1.1rem", lineHeight: 1.75, color: "var(--color-muted)", maxWidth: 560, marginBottom: "3rem" }}>
-          I build systems that <span style={{ color: "var(--color-text)" }}>think, automate, and scale</span> — from AI agents to Flutter apps to n8n workflows. 10+ years in telecom infrastructure, now focused on making technology work smarter.
+          I design IT systems the way an engineer should: <span style={{ color: "var(--color-text)" }}>understand the problem, find the simplest path, then automate it so it scales without me</span>. 10+ years of telecom infrastructure taught me how systems work, and how they fail. Technology doesn&apos;t stand still and neither do I: right now that means mastering how AI fits into real IT operations.
         </p>
 
         {/* CTAs */}
