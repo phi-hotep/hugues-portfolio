@@ -31,7 +31,7 @@
     ],
     "type": "code",
     "outcome": "Functional multi-step AI agent with zero third-party framework dependency",
-    "thumbnail": "/images/projects/react-agent.png",
+    "thumbnail": "/images/projects/react-ai-agent.png",
     "repo": "https://github.com/huguesbomokin/react-agent",
     "featured": true
   },
@@ -48,7 +48,7 @@
     ],
     "type": "case-study",
     "outcome": "Reduced manual NOC intervention on repetitive alerts across multi-vendor infrastructure",
-    "thumbnail": "/images/projects/noc-triage.png",
+    "thumbnail": "/images/projects/noc-alert-triage.png",
     "caseStudy": "/projects/noc-triage",
     "featured": false
   },
@@ -88,7 +88,7 @@
     ],
     "type": "case-study",
     "outcome": "Improved digital service access for underserved community members in Toronto",
-    "thumbnail": "/images/projects/health-centre.png",
+    "thumbnail": "/images/projects/community-health-app.png",
     "caseStudy": "/projects/health-centre-app",
     "featured": false
   },
@@ -105,7 +105,7 @@
     ],
     "type": "workflow",
     "outcome": "Eliminated manual calendar management across connected systems",
-    "thumbnail": "/images/projects/calendar-workflow.png",
+    "thumbnail": "/images/projects/gcal-automation.png",
     "caseStudy": "/projects/calendar-automation",
     "featured": false
   },
