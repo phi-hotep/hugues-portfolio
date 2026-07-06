@@ -14,7 +14,7 @@
     "description": "Cross-platform apps with Flutter that run natively on iOS, Android, and Web. Clean architecture, Firebase backend, and production-ready from day one."
   },
   {
-    "name": "Workflow Automation (n8n)",
+    "name": "Workflow Automation",
     "slug": "n8n",
     "icon": "GitBranch",
     "color": "amber",
